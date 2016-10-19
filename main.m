@@ -31,3 +31,4 @@ s = real(s);
 % play noise
 disp('WHITE noise');
 sound(noise, sf);                % playing sound
+% test
