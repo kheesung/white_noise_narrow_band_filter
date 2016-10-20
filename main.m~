@@ -1,19 +1,23 @@
-function main()
+clc;clear all;close all;
 
-prompt = {'What is the duration of the noise (in seconds)?', ...
-'What is the lower bound of the narrowband filter (in Hz)?', ...
-'What is the upper bound of the narrowband filter (in Hz)?'};
-answer = inputdlg(prompt);
-transform = str2double(answer);
+
+% prompt = {'What is the duration of the noise (in seconds)?','What is the lower bound of the '};
+% dlg_title = 'Input';
+% num_lines = 1;
+% defaultans = {'20','hsv'};
+% answer = inputdlg(prompt,dlg_title,num_lines,defaultans);
+
 
 % set general variables
-sf = 20001;  % sample frequency
-d = transform(1);     % duration (time)
+sf = 20000;  % sample frequency
+nf = sf / 2; % nyquist frequency
+d = 2.0;     % duration (time)
 n = sf * d;  % number of samples
+nh = n / 2;  % half number of samples
 % =========================================================================
 % set variables for filter
-lf = transform(2);   % lowest frequency
-hf = transform(3);   % highest frequency
+lf = 10000;   % lowest frequency
+hf = 2000;   % highest frequency
 lp = lf * d; % ls point in frequency domain    
 hp = hf * d; % hf point in frequency domain
 % design filter

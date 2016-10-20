@@ -54,6 +54,7 @@ function duration_OpeningFcn(hObject, eventdata, handles, varargin)
 
 % Choose default command line output for duration
 handles.output = hObject;
+handles.duration = varargin{1};
 
 % Update handles structure
 guidata(hObject, handles);
