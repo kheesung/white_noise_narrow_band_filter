@@ -1,0 +1,26 @@
+ant:
+<ant>
+  <mkdir dir="/Users/kimheesung/Documents/MATLAB/whitenoise/for_redistribution" />
+  <mkdir dir="/Users/kimheesung/Documents/MATLAB/whitenoise/for_testing" />
+  <mkdir dir="/Users/kimheesung/Documents/MATLAB/whitenoise/for_redistribution_files_only" />
+</ant>
+mcc -o whitenoise -W WinMain:whitenoise -T link:exe -d /Users/kimheesung/Documents/MATLAB/whitenoise/for_testing -v /Users/kimheesung/Documents/white_noise_narrow_band_filter/main.m 
+Compiler version: 5.2 (R2014b)
+Dependency analysis by REQUIREMENTS.
+[Warning: Adding path
+"/Users/kimheesung/Documents/white_noise_narrow_band_filter" to Compiler path
+instance.] 
+Parsing file "/Users/kimheesung/Documents/white_noise_narrow_band_filter/main.m"
+	(Referenced from: "Compiler Command Line").
+Deleting 0 temporary MEX authorization files.
+Generating file "/Users/kimheesung/Documents/MATLAB/whitenoise/for_testing/readme.txt".
+Generating file "/Users/kimheesung/Documents/MATLAB/whitenoise/for_testing/run_whitenoise.sh".
+Packaging...
+Adding custom icon /Applications/MATLAB_R2014b.app/toolbox/compiler/Resources/default_icon.icns to /Users/kimheesung/Documents/MATLAB/whitenoise/for_testing/whitenoise.app.
+Creating the bundle...
+Copying /Applications/MATLAB_R2014b.app/toolbox/compiler/maci64/setup.app to /Users/kimheesung/Documents/MATLAB/whitenoise/for_redistribution/MyAppInstaller_web.app.
+Copying /Users/kimheesung/Documents/MATLAB/whitenoise/for_redistribution/bundle.zip to /Users/kimheesung/Documents/MATLAB/whitenoise/for_redistribution/MyAppInstaller_web.app/Contents/Resources/bundle.zip.
+Copying /Applications/MATLAB_R2014b.app/toolbox/compiler/Resources/default_splash.png to /Users/kimheesung/Documents/MATLAB/whitenoise/for_redistribution/MyAppInstaller_web.app/Contents/Resources/splash.png.
+Copying /Applications/MATLAB_R2014b.app/toolbox/compiler/Resources/default_icon.icns to /Users/kimheesung/Documents/MATLAB/whitenoise/for_redistribution/MyAppInstaller_web.app/Contents/Resources/installer.icns.
+Web based installer created at /Users/kimheesung/Documents/MATLAB/whitenoise/for_redistribution/MyAppInstaller_web.app.
+Packaging complete.
